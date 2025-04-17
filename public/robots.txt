@@ -1,0 +1,7 @@
+# robots.txt for https://randomizer.uz
+
+User-agent: *
+Allow: /
+
+# Указываем карту сайта
+Sitemap: https://randomizer.uz/sitemap.xml
