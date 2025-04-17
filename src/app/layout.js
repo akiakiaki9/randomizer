@@ -2,6 +2,7 @@ import '../styles/styles.css'
 import '../styles/landing.css'
 import '../styles/footer.css'
 import '../styles/switcher.css'
+import Head from 'next/head';
 
 export const metadata = {
   title: "Randomizer - генератор случайных чисел",
@@ -16,7 +17,7 @@ export const metadata = {
     type: "website",
     locale: "ru_RU",
     alternateLocale: ["uz_UZ", "en_US"]
-  },  
+  },
   twitter: {
     card: "summary_large_image",
     title: "Randomizer - генератор случайных чисел",
@@ -27,6 +28,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+      </Head>
       <body>
         {children}
       </body>

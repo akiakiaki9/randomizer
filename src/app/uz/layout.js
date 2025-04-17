@@ -1,6 +1,7 @@
 import '../../styles/styles.css'
 import '../../styles/landing.css'
 import '../../styles/footer.css'
+import Head from 'next/head';
 
 export const metadata = {
   title: "Randomizer - tasodifiy sonlar generatori",
@@ -27,6 +28,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="uz">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+      </Head>
       <body>
         {children}
       </body>
